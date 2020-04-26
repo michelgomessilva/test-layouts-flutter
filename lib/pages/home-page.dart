@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping/widgets/Products/best-selling-widget.dart';
 import 'package:shopping/widgets/categories/category-widget.dart';
 import 'package:shopping/widgets/shared/search-widget.dart';
 
@@ -14,16 +15,17 @@ class HomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             SizedBox(
-              height: 60,
+              height: 20,
             ),
             Search(),
             SizedBox(
-              height: 30,
+              height: 10,
             ),
             Category(),
             SizedBox(
-              height: 30,
+              height: 15,
             ),
+            BestSelling(),
           ],
         ),
       ),

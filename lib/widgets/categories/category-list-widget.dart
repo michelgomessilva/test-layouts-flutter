@@ -7,20 +7,17 @@ class CategoryList extends StatelessWidget {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          categoryItem(),
-          categoryItem(),
-          categoryItem(),
-          categoryItem(),
-          categoryItem(),
-          categoryItem(),
-          categoryItem(),
-          categoryItem(),
+          categoryItem("Devices"),
+          categoryItem("Gadgets"),
+          categoryItem("Gaming"),
+          categoryItem("Mens_Shoe"),
+          categoryItem("Womens_Shoe"),
         ],
       ),
     );
   }
 
-  Widget categoryItem() {
+  Widget categoryItem(String categoryName) {
     return Container(
       width: 70,
       height: 70,
@@ -40,7 +37,7 @@ class CategoryList extends StatelessWidget {
           Radius.circular(64),
         ),
       ),
-      child: Image.asset("assets/Icon_Devices.png"),
+      child: Image.asset("assets/Icon_${categoryName}.png"),
     );
   }
 }

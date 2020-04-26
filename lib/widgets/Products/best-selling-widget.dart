@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:shopping/widgets/Products/product-card-widget.dart';
+import 'package:shopping/widgets/Products/product-list-widget.dart';
 
 class BestSelling extends StatelessWidget {
   @override
@@ -27,29 +27,9 @@ class BestSelling extends StatelessWidget {
         ),
         Container(
           height: 350,
-          child: productList(),
+          child: ProductList(),
         ),
       ],
-    );
-  }
-
-  Widget productList() {
-    return Container(
-      child: ListView(
-        scrollDirection: Axis.horizontal,
-        children: <Widget>[
-          ProductCard(imageName: "product-1.png"),
-          ProductCard(imageName: "product-2.png"),
-          ProductCard(imageName: "product-3.png"),
-          ProductCard(imageName: "product-4.png"),
-          ProductCard(imageName: "product-5.png"),
-          ProductCard(imageName: "product-6.png"),
-          ProductCard(imageName: "product-7.png"),
-          ProductCard(imageName: "product-8.png"),
-          ProductCard(imageName: "product-9.png"),
-          ProductCard(imageName: "product-10.png"),
-        ],
-      ),
     );
   }
 }

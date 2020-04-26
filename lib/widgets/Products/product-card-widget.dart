@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:shopping/pages/product-detail-page.dart';
 
 class ProductCard extends StatelessWidget {
-  var imageName = "";
+  var productImage = "";
 
   ProductCard({
-    @required this.imageName,
+    @required this.productImage,
   });
 
   @override
@@ -17,11 +18,22 @@ class ProductCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Image.asset(
-            "assets/${this.imageName}",
-            width: 170,
-            height: 170,
-            fit: BoxFit.cover,
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      ProductDetail(productImage: this.productImage),
+                ),
+              );
+            },
+            child: Image.asset(
+              "assets/${this.productImage}",
+              width: 170,
+              height: 170,
+              fit: BoxFit.cover,
+            ),
           ),
           SizedBox(
             height: 10,

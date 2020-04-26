@@ -37,7 +37,7 @@ class CategoryList extends StatelessWidget {
           Radius.circular(64),
         ),
       ),
-      child: Image.asset("assets/Icon_${categoryName}.png"),
+      child: Image.asset("assets/Icon_$categoryName.png"),
     );
   }
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:shopping/widgets/carts/cart-checkout-widget.dart';
+import 'package:shopping/widgets/carts/cart-list-widget.dart';
 
 class CartPage extends StatelessWidget {
   @override
@@ -7,13 +9,10 @@ class CartPage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Container(
-            color: Colors.red,
+          Expanded(
+            child: CartList(),
           ),
-          Container(
-            height: 80,
-            color: Colors.yellow,
-          ),
+          CartCheckout(),
         ],
       ),
     );

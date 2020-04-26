@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping/pages/login-page.dart';
 
 void main() => runApp(MyApp());
 
@@ -6,28 +7,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Shopping Demo Study',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("My App"),
-      ),
-      body: Container(
-        color: Colors.lightBlue,
-        child: Center(
-          child: Text("Hello World!"),
-        ),
-      ),
+      home: LoginPage(),
     );
   }
 }

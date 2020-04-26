@@ -4,7 +4,19 @@ class CategoryList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: categoryItem(),
+      child: ListView(
+        scrollDirection: Axis.horizontal,
+        children: <Widget>[
+          categoryItem(),
+          categoryItem(),
+          categoryItem(),
+          categoryItem(),
+          categoryItem(),
+          categoryItem(),
+          categoryItem(),
+          categoryItem(),
+        ],
+      ),
     );
   }
 
@@ -28,6 +40,7 @@ class CategoryList extends StatelessWidget {
           Radius.circular(64),
         ),
       ),
+      child: Image.asset("assets/Icon_Devices.png"),
     );
   }
 }

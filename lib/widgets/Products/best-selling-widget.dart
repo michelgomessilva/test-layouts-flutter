@@ -13,7 +13,7 @@ class BestSelling extends StatelessWidget {
             Text(
               "Best Selling",
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 20,
               ),
             ),
             FlatButton(
@@ -23,10 +23,10 @@ class BestSelling extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: 10,
+          height: 5,
         ),
         Container(
-          height: 350,
+          height: 325,
           child: ProductList(),
         ),
       ],

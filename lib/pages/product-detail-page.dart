@@ -2,8 +2,18 @@ import 'package:flutter/material.dart';
 
 class ProductDetail extends StatelessWidget {
   var productImage = "";
+  var productName = "";
+  var price = 0.0;
+  var brandName = "";
+  var description = "";
 
-  ProductDetail({@required this.productImage});
+  ProductDetail({
+    @required this.productImage,
+    @required this.productName,
+    @required this.brandName,
+    @required this.price,
+    @required this.description,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +47,7 @@ class ProductDetail extends StatelessWidget {
                 right: 10,
               ),
               child: Text(
-                "Dry Fit Long Sleeve",
+                this.productName,
                 style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
@@ -46,7 +56,7 @@ class ProductDetail extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.all(10),
-              child: Text("by Nike"),
+              child: Text(this.brandName),
             ),
             Padding(
               padding: EdgeInsets.all(10),
@@ -60,7 +70,7 @@ class ProductDetail extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(10),
               child: Text(
-                "Nike Dri-FIT is a polyester fabric designed to help you keep dry so you can more comfortably work harder, longer.",
+                this.description,
               ),
             ),
           ],

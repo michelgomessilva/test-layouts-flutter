@@ -4,7 +4,7 @@ class Search extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: 50,
       padding: EdgeInsets.only(left: 20),
       decoration: BoxDecoration(
         color: Colors.black.withOpacity(0.1),

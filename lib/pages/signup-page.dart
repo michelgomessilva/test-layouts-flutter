@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping/widgets/signup-textfields-widget.dart';
+import 'package:shopping/widgets/login/signup-textfields-widget.dart';
 
 class SignUpPage extends StatelessWidget {
   @override

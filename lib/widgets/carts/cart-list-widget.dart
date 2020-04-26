@@ -7,6 +7,11 @@ class CartList extends StatelessWidget {
     return ListView(
       children: <Widget>[
         CartItem(
+          productName: "Nike Dry-Fit Long Sleeve",
+          price: 150,
+          productImage: "product-10.png",
+        ),
+        CartItem(
           productName: "BeoPlay Speaker",
           price: 755,
           productImage: "product-1.png",

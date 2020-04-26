@@ -3,9 +3,15 @@ import 'package:shopping/pages/product-detail-page.dart';
 
 class ProductCard extends StatelessWidget {
   var productImage = "";
+  var productName = "";
+  var price = 0.0;
+  var brandName = "";
 
   ProductCard({
     @required this.productImage,
+    @required this.productName,
+    @required this.brandName,
+    @required this.price,
   });
 
   @override
@@ -23,8 +29,13 @@ class ProductCard extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) =>
-                      ProductDetail(productImage: this.productImage),
+                  builder: (context) => ProductDetail(
+                      productImage: this.productImage,
+                      productName: this.productName,
+                      brandName: this.brandName,
+                      price: this.price,
+                      description:
+                          "Nike Dri-FIT is a polyester fabric designed to help you keep dry so you can more comfortably work harder, longer."),
                 ),
               );
             },
@@ -41,7 +52,7 @@ class ProductCard extends StatelessWidget {
           Container(
             height: 60,
             child: Text(
-              "Title of Product",
+              this.productName,
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w300,
@@ -52,7 +63,7 @@ class ProductCard extends StatelessWidget {
             height: 5,
           ),
           Text(
-            "Brand of Product",
+            this.brandName,
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w300,
@@ -62,7 +73,7 @@ class ProductCard extends StatelessWidget {
             height: 5,
           ),
           Text(
-            "€ 2.000,00",
+            "${this.price} €",
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,

@@ -11,12 +11,12 @@ class Category extends StatelessWidget {
           child: Text(
             "Categories",
             style: TextStyle(
-              fontSize: 30,
+              fontSize: 20,
             ),
           ),
         ),
         SizedBox(
-          height: 10,
+          height: 5,
         ),
         Container(
           height: 90,

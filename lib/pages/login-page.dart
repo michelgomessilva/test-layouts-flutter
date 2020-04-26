@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shopping/widgets/login-external.dart';
-import 'package:shopping/widgets/login-widget.dart';
+import 'package:shopping/widgets/login/login-external.dart';
+import 'package:shopping/widgets/login/login-widget.dart';
 
 class LoginPage extends StatelessWidget {
   @override

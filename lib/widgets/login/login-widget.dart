@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shopping/widgets/login-forgot-widget.dart';
-import 'package:shopping/widgets/login-signin-widget.dart';
-import 'package:shopping/widgets/login-signup-widget.dart';
-import 'package:shopping/widgets/login-textfields-widget.dart';
-import 'package:shopping/widgets/login-welcome-widget.dart';
+import 'package:shopping/widgets/login/login-forgot-widget.dart';
+import 'package:shopping/widgets/login/login-signin-widget.dart';
+import 'package:shopping/widgets/login/login-signup-widget.dart';
+import 'package:shopping/widgets/login/login-textfields-widget.dart';
+import 'package:shopping/widgets/login/login-welcome-widget.dart';
 
 class Login extends StatelessWidget {
   @override

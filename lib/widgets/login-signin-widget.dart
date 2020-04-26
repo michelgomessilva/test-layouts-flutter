@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping/pages/home-page.dart';
 
 class LoginSignIn extends StatelessWidget {
   @override
@@ -18,7 +19,14 @@ class LoginSignIn extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => HomePage(),
+            ),
+          );
+        },
       ),
     );
   }

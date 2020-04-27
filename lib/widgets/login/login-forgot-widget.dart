@@ -7,7 +7,12 @@ class LoginForgot extends StatelessWidget {
       height: 40,
       alignment: Alignment.centerRight,
       child: FlatButton(
-        child: Text("Forgot your passoword?"),
+        child: Text(
+          "Forgot your passoword?",
+          style: TextStyle(
+            color: Theme.of(context).primaryColor,
+          ),
+        ),
         onPressed: () {},
       ),
     );

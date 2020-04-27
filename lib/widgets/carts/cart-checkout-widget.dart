@@ -26,7 +26,7 @@ class CartCheckout extends StatelessWidget {
                 Text(
                   "4250 €",
                   style: TextStyle(
-                    color: Colors.blue,
+                    color: Theme.of(context).primaryColor,
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                   ),
@@ -38,7 +38,7 @@ class CartCheckout extends StatelessWidget {
             height: 50,
             width: 150,
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: Theme.of(context).primaryColor,
               borderRadius: BorderRadius.all(
                 Radius.circular(5),
               ),
@@ -48,7 +48,7 @@ class CartCheckout extends StatelessWidget {
               child: Text(
                 "Checkout",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Theme.of(context).accentColor,
                 ),
               ),
               onPressed: () => {},

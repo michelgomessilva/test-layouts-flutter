@@ -5,7 +5,12 @@ class LoginSignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-      child: Text("Sign Up"),
+      child: Text(
+        "Sign Up",
+        style: TextStyle(
+          color: Theme.of(context).primaryColor,
+        ),
+      ),
       onPressed: () {
         Navigator.push(
           context,

@@ -7,7 +7,7 @@ class LoginSignIn extends StatelessWidget {
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        color: Colors.blue,
+        color: Theme.of(context).primaryColor,
         borderRadius: BorderRadius.all(
           Radius.circular(5),
         ),

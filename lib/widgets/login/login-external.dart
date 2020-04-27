@@ -11,7 +11,7 @@ class LoginExternal extends StatelessWidget {
           decoration: BoxDecoration(
             border: Border.all(
               width: 2.0,
-              color: Colors.blue,
+              color: Theme.of(context).primaryColor,
             ),
             borderRadius: BorderRadius.all(
               Radius.circular(5),
@@ -42,7 +42,7 @@ class LoginExternal extends StatelessWidget {
           decoration: BoxDecoration(
             border: Border.all(
               width: 2.0,
-              color: Colors.blue,
+              color: Theme.of(context).primaryColor,
             ),
             borderRadius: BorderRadius.all(
               Radius.circular(5),

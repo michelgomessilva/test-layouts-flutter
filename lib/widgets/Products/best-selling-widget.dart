@@ -12,9 +12,7 @@ class BestSelling extends StatelessWidget {
           children: <Widget>[
             Text(
               "Best Selling",
-              style: TextStyle(
-                fontSize: 20,
-              ),
+              style: Theme.of(context).textTheme.headline,
             ),
             FlatButton(
               child: Text("See All"),

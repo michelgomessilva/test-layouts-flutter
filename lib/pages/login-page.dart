@@ -8,7 +8,6 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
-          color: Color(0xFFF5F5F5),
           padding: EdgeInsets.only(
             top: 80,
             left: 20,

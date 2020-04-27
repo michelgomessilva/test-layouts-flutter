@@ -7,12 +7,12 @@ class LoginWelcome extends StatelessWidget {
       children: <Widget>[
         Text(
           "Welcome",
-          style: TextStyle(
-            fontSize: 30,
-            fontWeight: FontWeight.w500,
-          ),
+          style: Theme.of(context).textTheme.display2,
         ),
-        Text("Sign in to continue"),
+        Text(
+          "Sign in to continue",
+          style: Theme.of(context).textTheme.subhead,
+        ),
       ],
     );
   }

@@ -10,7 +10,8 @@ class Login extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 370,
-      decoration: BoxDecoration(color: Colors.white, boxShadow: [
+      decoration:
+          BoxDecoration(color: Theme.of(context).accentColor, boxShadow: [
         new BoxShadow(
           color: Colors.black12,
           offset: new Offset(1, 2.0),
@@ -19,7 +20,7 @@ class Login extends StatelessWidget {
         )
       ]),
       child: Padding(
-        padding: EdgeInsets.only(left: 15, right: 15, top: 40),
+        padding: EdgeInsets.only(left: 15, right: 15, top: 20),
         child: Column(
           children: <Widget>[
             Row(

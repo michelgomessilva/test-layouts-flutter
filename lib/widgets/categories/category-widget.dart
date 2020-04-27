@@ -10,9 +10,7 @@ class Category extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text(
             "Categories",
-            style: TextStyle(
-              fontSize: 20,
-            ),
+            style: Theme.of(context).textTheme.headline,
           ),
         ),
         SizedBox(

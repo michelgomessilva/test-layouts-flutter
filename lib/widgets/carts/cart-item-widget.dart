@@ -40,7 +40,7 @@ class CartItem extends StatelessWidget {
                 Text(
                   "$price €",
                   style: TextStyle(
-                    color: Colors.blue,
+                    color: Theme.of(context).primaryColor,
                   ),
                 ),
                 SizedBox(

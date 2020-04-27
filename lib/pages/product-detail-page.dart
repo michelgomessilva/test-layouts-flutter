@@ -29,10 +29,13 @@ class ProductDetail extends StatelessWidget {
               pinned: true,
               flexibleSpace: FlexibleSpaceBar(
                 centerTitle: true,
-                background: Image.asset(
-                  "assets/$productImage",
-                  width: double.infinity,
-                  fit: BoxFit.fitWidth,
+                background: Hero(
+                  tag: productImage,
+                  child: Image.asset(
+                    "assets/$productImage",
+                    width: double.infinity,
+                    fit: BoxFit.fitWidth,
+                  ),
                 ),
               ),
             ),

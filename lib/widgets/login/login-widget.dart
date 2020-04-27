@@ -6,6 +6,16 @@ import 'package:shopping/widgets/login/login-textfields-widget.dart';
 import 'package:shopping/widgets/login/login-welcome-widget.dart';
 
 class Login extends StatelessWidget {
+  var formKey = GlobalKey<FormState>();
+  String email;
+  String password;
+
+  Login({
+    this.formKey,
+    this.email,
+    this.password,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -33,7 +43,11 @@ class Login extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            LoginTextFields(),
+            LoginTextFields(
+              formKey: formKey,
+              email: email,
+              password: password,
+            ),
             LoginForgot(),
             SizedBox(
               height: 10,
